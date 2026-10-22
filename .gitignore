@@ -1,0 +1,11 @@
+.build/
+__pycache__/
+*.py[cod]
+*.class
+.idea/
+*.iml
+.env
+*.pem
+*.key
+.DS_Store
+Thumbs.db

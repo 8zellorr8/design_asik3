@@ -1,0 +1,74 @@
+{
+  "mode": "validation",
+  "base_seed": 20261022,
+  "warmups_per_method_per_size": 3,
+  "repetitions_per_method_per_size": 5,
+  "timer": "System.nanoTime()",
+  "java_version": "25.0.1",
+  "java_runtime": "25.0.1+8-LTS-27",
+  "java_vm": "Java HotSpot(TM) 64-Bit Server VM",
+  "os": "Windows 11",
+  "os_version": "10.0",
+  "architecture": "amd64",
+  "available_processors": 12,
+  "max_heap_bytes": 402653184,
+  "checksum": 4035421414965181102,
+  "measurements": [
+    {
+      "n": 1000,
+      "m": 4000,
+      "seed": 20296022,
+      "graph_fingerprint": "6c254daa30a28227",
+      "expected_components": 4,
+      "expected_cost": -995949415446,
+      "validation": "passed"
+    },
+    {
+      "n": 10000,
+      "m": 40000,
+      "seed": 20611022,
+      "graph_fingerprint": "ca92b06cfb17a21e",
+      "expected_components": 4,
+      "expected_cost": -9995504392833,
+      "validation": "passed"
+    },
+    {
+      "n": 100000,
+      "m": 250000,
+      "seed": 23611022,
+      "graph_fingerprint": "31aa22d0a98a7eb4",
+      "expected_components": 4,
+      "expected_cost": -99991006962082,
+      "validation": "passed"
+    }
+  ],
+  "measured_at_utc": "2026-10-22T17:09:38.958884+00:00",
+  "hardware": {
+    "processor": "11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz",
+    "logical_processors": 12,
+    "platform": "Windows-11-10.0.26100-SP0",
+    "physical_memory_bytes": 16888246272
+  },
+  "compiler_version": "javac 25.0.1",
+  "compile_command": [
+    "javac",
+    "--release",
+    "17",
+    "-d",
+    ".build/benchmark",
+    "src/Java/Algorithms.java",
+    "src/Java/Input.java",
+    "src/Java/Json.java",
+    "src/Java/Main.java",
+    "tests/Benchmark.java"
+  ],
+  "run_command": [
+    "java",
+    "-Xms256m",
+    "-Xmx384m",
+    "-cp",
+    ".build/benchmark",
+    "Benchmark",
+    "--validate-only"
+  ]
+}

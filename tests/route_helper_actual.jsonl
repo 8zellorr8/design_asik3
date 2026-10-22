@@ -1,0 +1,6 @@
+{"case":"reachable","source":0,"target":3,"parent_edge":[-1,0,2,3,-1],"route":[0,1,2,3],"selected_edge_ids":[0,2,3],"cost":0,"expected_cost":0,"direction_valid":true,"passed":true}
+{"case":"source","source":0,"target":0,"parent_edge":[-1,0,2,3,-1],"route":[0],"selected_edge_ids":[],"cost":0,"expected_cost":0,"direction_valid":true,"passed":true}
+{"case":"unreachable","source":0,"target":4,"parent_edge":[-1,0,2,3,-1],"route":[],"selected_edge_ids":[],"cost":null,"expected_cost":null,"direction_valid":true,"passed":true}
+{"case":"tied_parallel_actual","source":0,"target":3,"parent_edge":[-1,1,2,5],"route":[0,2,3],"selected_edge_ids":[2,5],"cost":2,"expected_cost":2,"direction_valid":true,"passed":true}
+{"case":"parallel_selected_id","source":0,"target":3,"parent_edge":[-1,6,2,4],"route":[0,1,3],"selected_edge_ids":[6,4],"cost":2,"expected_cost":2,"direction_valid":true,"passed":true}
+{"case":"alternative_tied_route","source":0,"target":3,"parent_edge":[-1,3,2,5],"route":[0,2,3],"selected_edge_ids":[2,5],"cost":2,"expected_cost":2,"direction_valid":true,"passed":true}

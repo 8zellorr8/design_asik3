@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "seed": 314159,
+  "boundary_cases": 46,
+  "random_cases": 720,
+  "case_count": 766,
+  "unique_cases": 714,
+  "mixed_requests_one_process": 2298,
+  "mixed_repetition_pattern": "cases + reverse(cases) + cases",
+  "mixed_seconds_including_jvm_parse_and_output": 1.56197,
+  "counts_by_task": {
+    "ping": 2,
+    "dsu": 124,
+    "kruskal": 128,
+    "prim": 128,
+    "scc": 127,
+    "topo": 127,
+    "dag": 130
+  },
+  "certificate_experiments": 41,
+  "accepted_alternative_or_valid_witnesses": 11,
+  "rejected_invalid_witnesses": 30,
+  "route_helper_calls": 6,
+  "full_limit_cases": [
+    {
+      "case": "dsu_full",
+      "task": "dsu",
+      "n": 100000,
+      "m_or_q": 250000,
+      "seconds_including_jvm_parse_and_output": 1.856439,
+      "passed": true
+    },
+    {
+      "case": "kruskal_full",
+      "task": "kruskal",
+      "n": 100000,
+      "m_or_q": 250000,
+      "seconds_including_jvm_parse_and_output": 1.839921,
+      "passed": true
+    },
+    {
+      "case": "prim_full",
+      "task": "prim",
+      "n": 100000,
+      "m_or_q": 250000,
+      "seconds_including_jvm_parse_and_output": 1.794403,
+      "passed": true
+    },
+    {
+      "case": "scc_pairs_full",
+      "task": "scc",
+      "n": 100000,
+      "m_or_q": 250000,
+      "seconds_including_jvm_parse_and_output": 1.733716,
+      "passed": true
+    },
+    {
+      "case": "scc_ring_full",
+      "task": "scc",
+      "n": 100000,
+      "m_or_q": 250000,
+      "seconds_including_jvm_parse_and_output": 1.720674,
+      "passed": true
+    },
+    {
+      "case": "topo_chain_full",
+      "task": "topo",
+      "n": 100000,
+      "m_or_q": 250000,
+      "seconds_including_jvm_parse_and_output": 1.748487,
+      "passed": true
+    },
+    {
+      "case": "topo_cycle_full",
+      "task": "topo",
+      "n": 100000,
+      "m_or_q": 250000,
+      "seconds_including_jvm_parse_and_output": 1.720033,
+      "passed": true
+    },
+    {
+      "case": "dag_chain_full",
+      "task": "dag",
+      "n": 100000,
+      "m_or_q": 250000,
+      "seconds_including_jvm_parse_and_output": 1.741161,
+      "passed": true
+    },
+    {
+      "case": "dag_unreachable_cycle_full",
+      "task": "dag",
+      "n": 100000,
+      "m_or_q": 250000,
+      "seconds_including_jvm_parse_and_output": 1.709555,
+      "passed": true
+    }
+  ],
+  "python": "3.14.3",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "java": "java version \"25.0.1\" 2025-10-21 LTS",
+  "heap_option": "-Xmx384m",
+  "stack_option": "-Xss256k",
+  "compile_command": [
+    "javac",
+    "--release",
+    "17",
+    "-encoding",
+    "UTF-8",
+    "-d",
+    ".build/tests",
+    "src/Java/Algorithms.java",
+    "src/Java/Input.java",
+    "src/Java/Json.java",
+    "src/Java/Main.java",
+    "tests/RouteHelperTest.java"
+  ],
+  "command": "python tests/run_own_tests.py --full"
+}
